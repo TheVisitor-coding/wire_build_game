@@ -35,29 +35,35 @@ function Persona() {
         {
           showText1 && (
             <motion.span
-              className="w-11/12 bg-grey rounded-md shadow-chat py-4 h-fit mt-8 ">
+              className="w-11/12 bg-grey rounded-md shadow-chat py-4 h-fit mt-8"
+            >
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
-                className="p-2 text-black font-kreon">Hope you're good! 🌟 I'm [Your Name], the crafty soul into [briefly describe your craft]. Need your awesome skills for a cool app idea I've got. 😎</motion.p>
+                className="p-2 text-black font-kreon"
+              >
+                Hope you&apos;re good! 🌟 I&apos;m [Your Name], the crafty soul into [briefly describe your craft]. Need your awesome skills for a cool app idea I&apos;ve got. 😎
+              </motion.p>
             </motion.span>
           )
         }
-
-
 
         {
           showText2 && (
             <motion.span
-              className=" w-11/12 h-fit py-4 bg-grey rounded-md shadow-chat mt-8">
+              className="w-11/12 h-fit py-4 bg-grey rounded-md shadow-chat mt-8"
+            >
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
-                className="p-2 text-black font-kreon font-medium"> I'm all about [describe your artisanal skills], but the tech side is like... 🤯. Can you help me whip up a rad prototype? 🚀
-                Holler back if you're up for it! 🙌</motion.p>
+                className="p-2 text-black font-kreon font-medium"
+              >
+                I&apos;m all about [describe your artisanal skills], but the tech side is like... 🤯. Can you help me whip up a rad prototype? 🚀 Holler back if you&apos;re up for it! 🙌
+              </motion.p>
             </motion.span>
           )
         }
+
 
 
         <div className="fixed bottom-0 flex flex-row items-top pt-24 -translate-x-14">

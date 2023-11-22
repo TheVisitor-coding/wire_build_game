@@ -11,7 +11,10 @@ function Waiting() {
       className="font-kreon flex flex-col h-screen items-center text-center text-black font-bold text-3xl justify-center gap-10 px-5">
       <p>Wait Please !!</p>
 
-      <p>You can't start the next step until you've reached the next end-of-section square. Don't cheat !</p>
+      <p>
+        You can&apos;t start the next step until you&apos;ve reached the next end-of-section square. Don&apos;t cheat!
+      </p>
+
 
       <motion.button
         initial={{ opacity: 0, y: 20 }}

@@ -3,6 +3,7 @@
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { loadData } from "../lib/localStorage";
+import Persona from "@/components/Persona";
 
 function Section1() {
   const searchParams = useSearchParams();
@@ -23,7 +24,10 @@ function Section1() {
 
   return (
     <>
-      <h1>Section 1 Welcome</h1>
+      <div className="h-screen w-screen">
+        <Persona />
+      </div>
+      {/* <h1>Section 1 Welcome</h1>
       <p>Player ID: {playerId}</p>
       {playerData && (
         <div>
@@ -50,7 +54,7 @@ function Section1() {
             </li>
           </ul>
         </div>
-      )}
+      )} */}
     </>
   );
 }

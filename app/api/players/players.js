@@ -1,14 +1,18 @@
-// pages/api/addPlayer.js
+// pages/api/players/route.js
 import { sql } from '@vercel/postgres';
 
 export default async function handler(req, res) {
+  if (req.method !== 'POST') {
+    return res.status(405).end(); // Méthode non autorisée
+  }
+
   try {
-    const { playerId, selectedScenario } = req.query;
+    const { playerId, scenarioId } = req.query;
 
     // Insertion du joueur avec les valeurs par défaut
     await sql`
       INSERT INTO players (id, scenario, challenge1, challenge2, challenge3)
-      VALUES (${playerId}, ${selectedScenario}, false, false, false)
+      VALUES (${playerId}, ${scenarioId}, false, false, false)
     `;
 
     res.status(200).json({ success: true });

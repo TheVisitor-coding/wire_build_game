@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 function Menu() {
-  const handleScenarioSelect = async (scenario :number) => {
+  const handleScenarioSelect = async (scenario: number) => {
     addPlayer(scenario);
   };
   const btn_variant = {
@@ -22,7 +22,7 @@ function Menu() {
   return (
     <>
       <div
-        className={`h-screen w-screen bg-bg-box bg-cover pt-14 flex items-center gap-14 flex-col`}
+        className={`h-screen w-screen bg-bg-box bg-cover pt-14 flex items-center justify-center gap-14 flex-col`}
       >
         <Image src="/Logo_bleu.png" width={100} height={100} alt="logo" />
 

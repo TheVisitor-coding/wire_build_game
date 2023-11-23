@@ -22,7 +22,7 @@ function Challenge2() {
 
   function validateBtn() {
     if (isClicked1 && isClicked3 && !isClicked2 && !isClicked4) {
-        window.location.href = `/challenge/success?scenario=2&&playerId=${playerId}`;
+      window.location.href = `/challenge/success?scenario=2&&playerId=${playerId}`;
     } else {
       setIsFailed(true);
     }
@@ -140,16 +140,16 @@ function Challenge2() {
             </button>
           </div>
 
-            <motion.h3
+          <motion.h3
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
             className={`${isFailed ? "text-red-500" : "hidden"} text-center`}
-            >You failed, wait your turn and try again</motion.h3>
+          >You failed, wait your turn and try again</motion.h3>
           <button
             onClick={() => validateBtn()}
             className="px-6 py-7 bg-blue flex items-center justify-center gap-5 text-xl"
           >
-            Valider <GrValidate />
+            Validate <GrValidate />
           </button>
         </div>
       )}

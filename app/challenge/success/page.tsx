@@ -30,6 +30,7 @@ function Success() {
       info_text:
         "In fact, the second button is more ergonomic because it's better sized. A simple rule of thumb for designing buttons is to double the size of the button height.",
     },
+    { id: "3", info_text: "o" },
   ];
 
   const textInfo = text.filter((text) => text.id === section);
@@ -70,7 +71,7 @@ function Success() {
           }}
           className="py-4 px-14 bg-blue rounded-full flex flex-row items-center text-white text-lg gap-3"
         >
-            <FaArrowRightLong />
+          <FaArrowRightLong />
         </button>
       </div>
     </>

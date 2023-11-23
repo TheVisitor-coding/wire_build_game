@@ -27,22 +27,22 @@ function Section1() {
             {
                 !isFailed ? (
 
-                    <div className='h-screen w-full p-5 flex flex-col items-center justify-center gap-8'>
-                        <h1 className='text-black font-kreon font-bold text-xl text-center'>Complete this text with the correct solution</h1>
-                        <Image src="/chall1.png" width={500} height={500} alt="grid" />
+                    <div className='h-screen w-full p-5 flex flex-col bg-gradient-to-b from-[#61ABF0] to-[#86A0FF] items-center justify-center gap-8'>
+                        <h1 className='text-white font-kreon font-bold text-xl text-center'>Complete this text with the correct solution</h1>
+                        <Image src="/chall1.png" width={500} height={500} alt="grid" className='rounded-2xl shadow-xl' />
                         <div className='w-11/12 flex flex-col gap-5'>
-                            <p className='font-kreon text-black'>The grid is a page layout system.
+                            <p className='font-kreon text-white'>The grid is a page layout system.
                                 It is based on a _______ dimensional grid that can be defined to suit your needs.</p>
                             <span className='flex justify-center flex-col gap-2 text-black'>
                                 <button
                                     onClick={() => setChoice(1)}
-                                    className={`px-10 py-2 bg-grey rounded-xl shadow-lg ${choice === 1 ? 'border-2 border-green-500' : ''}`}>One</button>
+                                    className={`px-10 py-2 bg-grey rounded-xl shadow-lg ${choice === 1 ? 'border-2 border-black' : ''}`}>One</button>
                                 <button
                                     onClick={() => setChoice(2)}
-                                    className={`px-10 py-2 bg-grey rounded-xl shadow-lg ${choice === 2 ? 'border-2 border-green-500' : ''}`}>Two</button>
+                                    className={`px-10 py-2 bg-grey rounded-xl shadow-lg ${choice === 2 ? 'border-2 border-black' : ''}`}>Two</button>
                                 <button
                                     onClick={() => setChoice(3)}
-                                    className={`px-10 py-2 bg-grey rounded-xl shadow-lg ${choice === 3 ? 'border-2 border-green-500' : ''}`}>Three</button>
+                                    className={`px-10 py-2 bg-grey rounded-xl shadow-lg ${choice === 3 ? 'border-2 border-black' : ''}`}>Three</button>
                             </span>
 
                         </div>
@@ -50,9 +50,9 @@ function Section1() {
                             onClick={() => verifyAnswer()}
                             initial={{ opacity: 0, x: 20 }}
                             animate={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
-                            className="px-8 py-2 bg-blue rounded-full"
+                            className="px-8 py-2 bg-white rounded-full"
                         >
-                            <FaArrowRightLong />
+                            <FaArrowRightLong color="#61ABF0" />
                         </motion.button>
                     </div>
                 ) : (

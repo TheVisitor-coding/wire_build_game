@@ -15,8 +15,8 @@ function Section3() {
   return (
     <>
       {!isFailed ? (
-        <div className="h-screen w-full text-black flex items-center justify-center flex-col gap-14 overflow-hidden">
-          <h2 className="font-bahaus text-3xl">Challenge 3</h2>
+        <div className="h-screen w-full text-white bg-gradient-to-b from-[#61ABF0] to-[#86A0FF] flex items-center justify-center flex-col gap-14 overflow-hidden">
+          <h2 className="font-kreon font-bold text-3xl">Challenge 3</h2>
           <div className="flex items-center text-center flex-col">
             <h3 className="text-kreon text-xl">
               Which Button is better in terms of ergonomy ?
@@ -24,7 +24,7 @@ function Section3() {
             <div className="flex flex-col items-center justify-around mt-10 gap-8">
               <motion.button
                 onClick={() => setIsFailed(true)}
-                className="py-8 px-14 bg-black rounded-lg flex flex-row items-center text-white text-lg gap-3"
+                className="py-8 px-14 bg-white rounded-lg flex flex-row items-center shadow-md text-black text-lg gap-3"
               >
                 Read More <FaArrowRightLong />
               </motion.button>
@@ -33,7 +33,7 @@ function Section3() {
                 onClick={() =>
                   (window.location.href = `/challenge/success?scenario=3&&playerId=${playerId}`)
                 }
-                className="py-4 px-14 bg-black rounded-full flex flex-row items-center text-white text-lg gap-3"
+                className="py-4 px-14 bg-white rounded-full flex flex-row items-center text-black shadow-md text-lg gap-3"
               >
                 Read More <FaArrowRightLong />
               </motion.button>
@@ -47,7 +47,7 @@ function Section3() {
 
               <motion.button
                 onClick={() => setIsFailed(true)}
-                className="py-1 px-2 bg-black rounded-lg flex flex-row items-center text-white text-lg gap-3"
+                className="py-1 px-2 bg-white shadow-md rounded-lg flex flex-row items-center text-black text-lg gap-3"
               >
                 Read More <FaArrowRightLong />
               </motion.button>

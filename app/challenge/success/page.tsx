@@ -25,13 +25,13 @@ function Success() {
   });
 
   const text = [
-    { id: "1", info_text: "o" },
+    { id: "1", info_text: "The grid serves as our page layout foundation, employing a versatile two-dimensional structure tailored to your requirements. It's a powerful system that allows you to define and customize layouts, providing flexibility in designing your digital space. Explore the possibilities of the grid to create a seamless and dynamic user experience." },
     {
       id: "2",
       info_text:
-        "In fact, the second button is more ergonomic because it's better sized. A simple rule of thumb for designing buttons is to double the size of the button height.",
+        "Crafting a stellar wireframe? Prioritize simplicity and clarity. Clearly define your key elements, like a user-friendly search bar and eye-catching Featured Products section.",
     },
-    { id: "3", info_text: "o" },
+    { id: "3", info_text: "In fact, the second button is more ergonomic because it's better sized. A simple rule of thumb for designing buttons is to double the size of the button height." },
   ];
 
   const textInfo = text.filter((text) => text.id === section);

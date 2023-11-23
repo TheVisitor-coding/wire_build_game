@@ -34,31 +34,30 @@ function Challenge2() {
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0, transition: { duration: 1 } }}
-          className="h-screen w-full flex flex-col pt-6 justify-between items-center relative"
+          className="h-screen w-full flex flex-col  pt-6 justify-between items-center relative overflow-hidden"
         >
           <div className="flex flex-col items-center">
-            <motion.span className="w-11/12 bg-grey rounded-md shadow-chat py-4 h-fit">
+            <motion.span className="w-11/12 bg-grey rounded-md shadow-chat py-2 h-fit">
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
                 className="p-2 text-black font-kreon text-center"
               >
-                Welcome to your first Challenge !! <br />
-                {"Let's see if you understand the basics of Wireframe"}
+                {"Hey again! Ready for the next challenge? This time, we're diving into the header and footer wireframes."}
               </motion.p>
             </motion.span>
 
-            <motion.span className="w-11/12 bg-grey rounded-md shadow-chat py-4 h-fit mt-8">
+            <motion.span className="w-11/12 bg-grey rounded-md shadow-chat py-2 h-fit mt-8">
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
                 className="p-2 text-black font-kreon text-center"
               >
-                {"I’ like to have a search bar on my website"}
+                {"I've got a specific vision in mind – a sleek search bar at the top for easy navigation, and don't forget a cool 'Featured Products' section at the bottom."}
               </motion.p>
             </motion.span>
 
-            <motion.span className="w-11/12 bg-grey rounded-md shadow-chat py-4 h-fit mt-8">
+            <motion.span className="w-11/12 bg-grey rounded-md shadow-chat py-2 h-fit mt-8">
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
@@ -86,7 +85,7 @@ function Challenge2() {
           </span>
         </motion.div>
       ) : (
-        <div className="h-screen w-full flex justify-center flex-col overflow-hidden">
+        <div className="h-screen w-full flex  justify-center flex-col overflow-hidden">
           <h2 className="text-center text-black text-2xl mt-5">
             Guess the good combination
           </h2>

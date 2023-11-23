@@ -4,10 +4,11 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-function Persona() {
+function Persona(playerId: any) {
 
   const [showText1, setShowText1] = useState(false);
   const [showText2, setShowText2] = useState(false);
+  const idUnique= playerId.playerId;
 
   useEffect(() => {
     const timeout1 = setTimeout(() => {
@@ -77,7 +78,7 @@ function Persona() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
                   whileTap={{ scale: 0.9 }}
-                  onClick={() => { window.location.href = "/waiting" }}
+                  onClick={() => { window.location.href = `/waiting?playerId=${idUnique}&&scenario=0` }}
                   className="p-4 rounded-full px-10 bg-blue shadow-md"><FaArrowRightLong /></motion.button>
               )
             }

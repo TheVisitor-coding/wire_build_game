@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         kreon: ["Kreon", "sans-serif"],
+        bahaus: ["Bauhaus_93", "sans-serif"],
       },
       backgroundImage: {
         "bg-box": "url('/bg-image.webp')",

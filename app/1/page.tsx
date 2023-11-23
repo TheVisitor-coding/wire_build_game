@@ -25,7 +25,7 @@ function Section1() {
   return (
     <>
       <div className="h-screen w-screen">
-        <Persona />
+        <Persona playerId={playerId}/>
       </div>
       {/* <h1>Section 1 Welcome</h1>
       <p>Player ID: {playerId}</p>

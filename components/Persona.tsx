@@ -8,7 +8,7 @@ function Persona(playerId: any) {
 
   const [showText1, setShowText1] = useState(false);
   const [showText2, setShowText2] = useState(false);
-  const idUnique= playerId.playerId;
+  const idUnique = playerId.playerId;
 
   useEffect(() => {
     const timeout1 = setTimeout(() => {
@@ -67,7 +67,7 @@ function Persona(playerId: any) {
 
 
 
-        <div className="fixed bottom-0 flex flex-row items-top pt-24 -translate-x-14">
+        <div className="fixed bottom-0 flex flex-row items-top pt-24 translate-y-10 -translate-x-14">
           <Image src={"/homme.svg"} width={250} height={250} alt="man" className="" />
           <div className="">
             {

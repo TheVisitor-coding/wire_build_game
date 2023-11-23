@@ -24,7 +24,7 @@ function Section4() {
   return (
     <>
       {!isFailed ? (
-        <div className="h-screen w-full flex flex-col items-center gap-4">
+        <div className="h-screen w-full flex flex-col items-center justify-center gap-4">
           <h2 className="text-black text-xl text-center p-5 font-kreon">
             When i press the register button, i want to go to the next page.
             What is good practice ?
@@ -35,9 +35,8 @@ function Section4() {
           <div className="flex flex-col gap-2">
             <button
               onClick={() => setChoice(1)}
-              className={`border-2 shadow-md rounded-xl font-medium text-md flex flex-col text-black p-2 ${
-                choice === 1 ? "border-green-500" : "border-black"
-              }`}
+              className={`border-2 shadow-md rounded-xl font-medium text-md flex flex-col text-black p-2 ${choice === 1 ? "border-green-500" : "border-black"
+                }`}
             >
               <p>Select the interactive zone for the connection</p>
               <p>Click to + create the connection</p>
@@ -46,9 +45,8 @@ function Section4() {
 
             <button
               onClick={() => setChoice(2)}
-              className={`border-2 shadow-md rounded-xl font-medium text-md flex flex-col text-black p-2 ${
-                choice === 2 ? "border-green-500" : "border-black"
-              }`}
+              className={`border-2 shadow-md rounded-xl font-medium text-md flex flex-col text-black p-2 ${choice === 2 ? "border-green-500" : "border-black"
+                }`}
             >
               <p>Select the interactive zone for the connection</p>
               <p>Click to + create the connection</p>

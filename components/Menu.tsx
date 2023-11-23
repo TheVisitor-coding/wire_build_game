@@ -21,12 +21,13 @@ function Menu() {
 
   return (
     <>
-      <div
+      <motion.div
         className={`h-screen w-screen bg-bg-box bg-cover pt-14 flex items-center justify-center gap-14 flex-col`}
       >
         <Image src="/Logo_bleu.png" width={100} height={100} alt="logo" />
 
-        <div className="flex items-center flex-col">
+        <motion.div
+          className="flex items-center flex-col">
           <h1 className="font-kreon text-3xl font-bold">
             Choose your Character
           </h1>
@@ -39,7 +40,7 @@ function Menu() {
               }}
               className="bg-blue py-4 rounded-xl shadow-lg"
             >
-              Scénario 1
+              Joseph The Musician
             </motion.button>
             <motion.button
               whileHover={btn_variant.hover}
@@ -49,7 +50,7 @@ function Menu() {
               }}
               className="bg-blue py-4 rounded-xl shadow-lg"
             >
-              Scénario 2
+              {" Script 2 (soon)"}
             </motion.button>
             <motion.button
               whileHover={btn_variant.hover}
@@ -59,7 +60,7 @@ function Menu() {
               }}
               className="bg-blue py-4 rounded-xl shadow-lg"
             >
-              Scénario 3
+              {" Script 3 (soon)"}
             </motion.button>
             <motion.button
               whileHover={btn_variant.hover}
@@ -69,11 +70,11 @@ function Menu() {
               }}
               className="bg-blue py-4 rounded-xl shadow-lg"
             >
-              Scénario 4
+              {" Script 4 (soon)"}
             </motion.button>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </>
   );
 }

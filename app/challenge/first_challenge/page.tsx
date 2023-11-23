@@ -27,7 +27,7 @@ function Section1() {
             {
                 !isFailed ? (
 
-                    <div className='h-screen w-full p-5 flex flex-col items-center gap-8'>
+                    <div className='h-screen w-full p-5 flex flex-col items-center justify-center gap-8'>
                         <h1 className='text-black font-kreon font-bold text-xl text-center'>Complete this text with the correct solution</h1>
                         <Image src="/chall1.png" width={500} height={500} alt="grid" />
                         <div className='w-11/12 flex flex-col gap-5'>

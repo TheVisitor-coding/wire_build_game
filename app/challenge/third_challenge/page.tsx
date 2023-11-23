@@ -16,7 +16,7 @@ function Section3() {
     <>
       {!isFailed ? (
         <div className="h-screen w-full text-black flex items-center justify-center flex-col gap-14 overflow-hidden">
-          <h2 className="font-bahaus text-3xl">Second Challenge</h2>
+          <h2 className="font-bahaus text-3xl">Challenge 3</h2>
           <div className="flex items-center text-center flex-col">
             <h3 className="text-kreon text-xl">
               Which Button is better in terms of ergonomy ?
@@ -26,7 +26,7 @@ function Section3() {
                 onClick={() => setIsFailed(true)}
                 className="py-8 px-14 bg-black rounded-lg flex flex-row items-center text-white text-lg gap-3"
               >
-                Lire la suite <FaArrowRightLong />
+                Read More <FaArrowRightLong />
               </motion.button>
 
               <motion.button
@@ -35,21 +35,21 @@ function Section3() {
                 }
                 className="py-4 px-14 bg-black rounded-full flex flex-row items-center text-white text-lg gap-3"
               >
-                Lire la suite <FaArrowRightLong />
+                Read More <FaArrowRightLong />
               </motion.button>
 
               <motion.button
                 onClick={() => setIsFailed(true)}
                 className="py-4 px-14 bg-red rounded-full flex flex-row items-center text-yellow-400 text-lg gap-3"
               >
-                Lire la suite <FaArrowRightLong />
+                Read More <FaArrowRightLong />
               </motion.button>
 
               <motion.button
                 onClick={() => setIsFailed(true)}
                 className="py-1 px-2 bg-black rounded-lg flex flex-row items-center text-white text-lg gap-3"
               >
-                Lire la suite <FaArrowRightLong />
+                Read More <FaArrowRightLong />
               </motion.button>
             </div>
           </div>

@@ -7,6 +7,7 @@ import Lottie from "lottie-react";
 import success from "@/public/sucess.json";
 import { FaInfoCircle } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 function Success() {
   const searchparams = useSearchParams();
@@ -53,7 +54,10 @@ function Success() {
 
   return (
     <>
-      <div className="h-screen w-full text-black flex flex-col gap-5 items-center mt-8">
+      <motion.div
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
+        className="h-screen w-full text-black flex flex-col gap-5 justify-center items-center">
         <h2 className="font-kreon text-3xl text-center">
           Congrats !! You succeed the challenge {section}
         </h2>
@@ -73,7 +77,7 @@ function Success() {
         >
           <FaArrowRightLong />
         </button>
-      </div>
+      </motion.div>
     </>
   );
 }

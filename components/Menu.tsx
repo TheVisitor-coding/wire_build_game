@@ -28,7 +28,7 @@ function Menu() {
 
         <motion.div
           className="flex items-center flex-col">
-          <h1 className="font-kreon text-3xl font-bold">
+          <h1 className="font-kreon text-3xl text-white font-bold">
             Choose your Character
           </h1>
           <div className="flex flex-col w-4/5 mt-14 gap-10">
@@ -38,7 +38,7 @@ function Menu() {
               onClick={() => {
                 handleScenarioSelect(1)
               }}
-              className="bg-blue py-4 rounded-xl shadow-lg"
+              className="bg-blue py-4 rounded-xl shadow-lg text-white"
             >
               Joseph The Musician
             </motion.button>
@@ -48,7 +48,7 @@ function Menu() {
               onClick={() => {
                 handleScenarioSelect(2)
               }}
-              className="bg-blue py-4 rounded-xl shadow-lg"
+              className="bg-blue py-4 rounded-xl shadow-lg text-white"
             >
               {" Script 2 (soon)"}
             </motion.button>
@@ -58,7 +58,7 @@ function Menu() {
               onClick={() => {
                 handleScenarioSelect(3)
               }}
-              className="bg-blue py-4 rounded-xl shadow-lg"
+              className="bg-blue py-4 rounded-xl shadow-lg text-white"
             >
               {" Script 3 (soon)"}
             </motion.button>
@@ -68,7 +68,7 @@ function Menu() {
               onClick={() => {
                 handleScenarioSelect(4)
               }}
-              className="bg-blue py-4 rounded-xl shadow-lg"
+              className="bg-blue py-4 rounded-xl shadow-lg text-white"
             >
               {" Script 4 (soon)"}
             </motion.button>

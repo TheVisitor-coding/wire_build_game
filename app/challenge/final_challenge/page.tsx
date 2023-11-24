@@ -24,7 +24,7 @@ function Section4() {
   return (
     <>
       {!isFailed ? (
-        <div className="h-screen w-full  flex flex-col items-center justify-center gap-4 mt-4">
+        <div className="h-screen w-full  flex flex-col items-center justify-center gap-4">
           <h2 className="text-black text-lg text-center p-5 font-kreon">
             When i press the register button, i want to go to the next page.
             What is good practice in Figma Prototype ?
@@ -35,17 +35,17 @@ function Section4() {
           <div className="flex flex-col gap-2">
             <button
               onClick={() => setChoice(1)}
-              className={`border-2 shadow-md rounded-xl font-medium text-md flex flex-col text-black p-2 ${choice === 1 ? "border-green-500" : "border-black"
+              className={`border-2 shadow-md rounded-xl font-medium text-sm flex flex-col text-black p-2 ${choice === 1 ? "border-green-500" : "border-black"
                 }`}
             >
-              <p>Select the interactive zone for the connection</p>
+              <p className="text-left">Select the interactive zone for the connection</p>
               <p>Click to + create the connection</p>
               <p>Drag it to the destination</p>
             </button>
 
             <button
               onClick={() => setChoice(2)}
-              className={`border-2 shadow-md rounded-xl font-medium text-md text-left flex flex-col text-black p-2 ${choice === 2 ? "border-green-500" : "border-black"
+              className={`border-2 shadow-md rounded-xl font-medium text-sm text-left flex flex-col text-black p-2 ${choice === 2 ? "border-green-500" : "border-black"
                 }`}
             >
               <p>Open the Prototype tab in the right-hand sidebar</p>

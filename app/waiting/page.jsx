@@ -26,7 +26,7 @@ function Waiting() {
 
       <p>
         You can&apos;t start the next step until you&apos;ve reached the next
-        end-of-section square. Don&apos;t cheat!
+        stage space. Don&apos;t cheat!
       </p>
 
       <motion.button

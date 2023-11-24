@@ -85,9 +85,9 @@ function Challenge2() {
           </span>
         </motion.div>
       ) : (
-        <div className="h-screen w-full flex  justify-center flex-col overflow-hidden">
-          <h2 className="text-center text-black text-2xl mt-5">
-            Guess the good combination
+        <div className="h-screen w-full flex  justify-center flex-col overflow-hidden p-2">
+          <h2 className="text-center text-black text-xl mt-5">
+            Guess the right combination by choosing the right header and footer
           </h2>
 
           <div className="h-1/3 w-full items-end flex flex-row justify-center overflow-x-hidden">
@@ -146,7 +146,7 @@ function Challenge2() {
           >You failed, wait your turn and try again</motion.h3>
           <button
             onClick={() => validateBtn()}
-            className="px-6 py-7 bg-blue flex items-center justify-center gap-5 text-xl"
+            className="px-4 py-6 rounded-xl bg-blue flex items-center justify-center gap-5 text-xl"
           >
             Validate <GrValidate />
           </button>

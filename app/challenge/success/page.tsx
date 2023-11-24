@@ -25,7 +25,7 @@ function Success() {
   });
 
   const text = [
-    { id: "1", info_text: "The grid serves as our page layout foundation, employing a versatile two-dimensional structure tailored to your requirements. It's a powerful system that allows you to define and customize layouts, providing flexibility in designing your digital space. Explore the possibilities of the grid to create a seamless and dynamic user experience." },
+    { id: "1", info_text: "The grid layout system offers flexibility for a dynamic user experience, allowing you to customize and define layouts to meet your needs."},
     {
       id: "2",
       info_text:

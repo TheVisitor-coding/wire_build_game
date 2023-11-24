@@ -24,10 +24,10 @@ function Section4() {
   return (
     <>
       {!isFailed ? (
-        <div className="h-screen w-full  flex flex-col items-center justify-center gap-4">
+        <div className="h-screen w-full  flex flex-col items-center justify-center gap-4 mt-4">
           <h2 className="text-black text-lg text-center p-5 font-kreon">
             When i press the register button, i want to go to the next page.
-            What is good practice ?
+            What is good practice in Figma Prototype ?
           </h2>
 
           <Image src="/chall3.png" width={300} height={300} alt="img_chall3" />
